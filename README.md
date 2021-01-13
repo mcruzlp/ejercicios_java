@@ -1,6 +1,6 @@
 ## Ejercicios de Java
 
-Aquí guardo los ejercicios que voy resolviendo de **Programación** en el CFGS 
+Aquí guardo los ejercicios que voy resolviendo de la asignatura de **Programación** en el CFGS 
 Desarrollo de Aplicaciones Multiplataforma **(DAM)** del **IES Campanillas**, 
 Málaga.
 
