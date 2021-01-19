@@ -24,71 +24,72 @@ package t6;
 public class Ej15_musica {
 
   public static void main(String[] args) {
-    int numNotas = (int)(Math.random()*27+1);
+    int numNotas;
     int nota;
     int i;
     int primeraNota = 0;
 
-    if (numNotas >= 4 && numNotas % 4 == 0) {
-      for (i = 1; i <= numNotas; i++) {
-        nota = (int) (Math.random() * 7 + 1);
-        if (i == 1) {
-          primeraNota = nota;
-        }
-        switch (nota) {
-          case 1:
-            System.out.print(" do");
-            break;
-          case 2:
-            System.out.print(" re");
-            break;
-          case 3:
-            System.out.print(" mi");
-            break;
-          case 4:
-            System.out.print(" fa");
-            break;
-          case 5:
-            System.out.print(" sol");
-            break;
-          case 6:
-            System.out.print(" la");
-            break;
-          case 7:
-            System.out.print(" si");
-            break;
-          default:
-        }
-        if (i >= 4 && i % 4 == 0) {
-          System.out.print(" |");
-        }
-        int ultimaNota = primeraNota;
-        switch (ultimaNota) {
-          case 1:
-            System.out.print(" do");
-            break;
-          case 2:
-            System.out.print(" re");
-            break;
-          case 3:
-            System.out.print(" mi");
-            break;
-          case 4:
-            System.out.print(" fa");
-            break;
-          case 5:
-            System.out.print(" sol");
-            break;
-          case 6:
-            System.out.print(" la");
-            break;
-          case 7:
-            System.out.print(" si");
-            break;
-          default:
-        }
-        System.out.print("|");
+    do{
+    	numNotas = (int)(Math.random()*27+1);
+    }while (numNotas < 4 || (numNotas + 1) % 4 != 0);
+    for (i = 1; i <= numNotas; i++) {
+      nota = (int) (Math.random() * 7 + 1);
+      if (i == 1) {
+        primeraNota = nota;
       }
-    }
+      switch (nota) {
+        case 1:
+          System.out.print(" do");
+          break;
+        case 2:
+          System.out.print(" re");
+          break;
+        case 3:
+          System.out.print(" mi");
+          break;
+        case 4:
+          System.out.print(" fa");
+          break;
+        case 5:
+          System.out.print(" sol");
+          break;
+        case 6:
+          System.out.print(" la");
+          break;
+        case 7:
+          System.out.print(" si");
+          break;
+        default:
+      }
+      if (i % 4 == 0) {
+        System.out.print(" |");
+      }
+     }
+     int ultimaNota = primeraNota;
+     switch (ultimaNota) {
+       case 1:
+         System.out.print(" do");          
+         break;
+       case 2:
+         System.out.print(" re");
+         break;
+       case 3:
+         System.out.print(" mi");
+         break;
+       case 4:
+         System.out.print(" fa");
+         break;
+       case 5:
+         System.out.print(" sol");
+         break;
+       case 6:
+         System.out.print(" la");
+         break;
+       case 7:
+         System.out.print(" si");
+         break;
+       default:
+     }
+     System.out.print("||\h");
   }
 }
