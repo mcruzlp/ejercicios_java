@@ -23,10 +23,10 @@ public class Ej00_primos {
         if ((num % i) == 0) {
           esPrimo = false;
         }
-        if(esPrimo){
-          System.out.println(num);
-          numPrimos++;
-        }
+      }
+      if(esPrimo){
+        System.out.println(num);
+        numPrimos++;
       }
     }while (numPrimos < 20);
     System.out.println(numPrimos);
