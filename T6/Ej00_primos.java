@@ -10,8 +10,24 @@
 package t6;
 
 public class Ej00_primos {
-  
+
   public static void main(String[] args) {
-    int notas = (int) (Math.random() * 1000 + 2);
+
+    int numPrimos = 0;
+
+    do {
+      int num = (int) (Math.random() * 999) + 2;
+      //boolean esPrimo = false;
+      for (int i = 2; i < num; i++) {
+        if (num % i == 0) {
+          //esPrimo = false;
+        } else {
+          //esPrimo = true;
+          System.out.println(num);
+          numPrimos++;
+        }
+      }
+    }while (numPrimos <= 20);
+    System.out.println(numPrimos);
   }
 }
