@@ -11,10 +11,37 @@
  */
 package t7;
 
+import java.util.Scanner;
+
 public class Ej6_rotar {
 
   public static void main(String[] args) {
-    
+
+    int[] elementos = new int[15];
+
+    System.out.println("Introduzca 15 números: ");
+    Scanner s = new Scanner(System.in);
+    for (int i = 0; i <= 14; i++) {
+      elementos[i] = Integer.parseInt(s.nextLine());
+    }
+    System.out.print("Los números introducidos son: ");
+    // System.out.println(Arrays.toString(elementos));
+    for (int i = 0; i <= 14; i++) {
+      System.out.print(elementos[i] + " ");
+    }
+
+    // int ultimo = elementos[14];
+    for (int i = 0; i < 14; i++) {
+      int aux = elementos[i + 1];
+      elementos[i + 1] = elementos[i];
+      elementos[i] = aux;
+    }
+    // elementos [0] = ultimo;
+
+    System.out.print("\nLos números rotados son: ");
+    for (int i = 0; i <= 14; i++) {
+      System.out.print(elementos[i] + " ");
+    }
+    System.out.println();
   }
-  
 }
