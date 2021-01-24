@@ -10,7 +10,7 @@ num= { 39, -2,  ,  , 0,  , 14,  , 5, 120,  ,  }
  * @author cruz
  *
  */
-package t7;
+
 
 public class Ej01_array_no_iniciado{
 

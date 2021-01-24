@@ -8,7 +8,7 @@ y viceversa.
  *
  */
 
-package t7;
+
 
 import java.util.Scanner;
 

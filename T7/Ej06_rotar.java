@@ -9,7 +9,7 @@
  * @author cruz
  *
  */
-package t7;
+
 
 import java.util.Scanner;
 

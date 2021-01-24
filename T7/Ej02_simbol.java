@@ -9,7 +9,7 @@ que no han sido inicializados?
  *
  */
 
-package t7;
+
 
 public class Ej02_simbol {
 
