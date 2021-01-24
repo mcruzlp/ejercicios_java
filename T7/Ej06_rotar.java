@@ -13,7 +13,7 @@ package t7;
 
 import java.util.Scanner;
 
-public class Ej6_rotar {
+public class Ej06_rotar {
 
   public static void main(String[] args) {
 
