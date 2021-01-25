@@ -36,9 +36,9 @@ public class Ex11mcruzlp1 {
     } while (!check);
 
     int probabilidad;
-    int densidadAlta = 10; //(40/4) 10 copos por capa
-    int densidadMedia = 5; //(40/8) 5 copos por capa
-    int densidadBaja = 2;  //(40/20) 2 copos por capa
+    int densidadAlta = 4; 
+    int densidadMedia = 8;
+    int densidadBaja = 20;
 
     switch (densidadElegida) {
       case 1:
@@ -55,13 +55,12 @@ public class Ex11mcruzlp1 {
     }
 
     for (int nieve = 0; nieve < 10; nieve++) { //altura de la nieve
-      int numAsteriscos = (int) (Math.random() * probabilidad); //num asteriscos por fila
-      for (int i = 0; i <= numAsteriscos; i++) {
-        int position = (int) (Math.random() * 40); //posición del copo en la cuadrícula
-        for (int anchoPantalla = 0; anchoPantalla <= (position - 1); anchoPantalla++) {
+      for (int anchoPantalla = 0; anchoPantalla < 40; anchoPantalla++) {
+        if ((int) (Math.random() * probabilidad) == 0){
+          System.out.print("*");
+        } else {
           System.out.print(" "); //hueco sin nieve
         }
-        System.out.print("*");
       }
       System.out.println();
     }
