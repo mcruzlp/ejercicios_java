@@ -3,7 +3,7 @@
  * @author cruz
  *
  */
-package ex11mcruzlp;
+package corrigiendo;
 
 import java.util.Scanner;
 
@@ -33,34 +33,34 @@ public class Ex11mcruzlp2 {
 
       switch (primerDigito) {
         case 0:
-          System.out.print("_ _ _ _ _ ");
+          System.out.print("_ _ _ _ _  ");
           break;
         case 1:
-          System.out.print(". _ _ _ _ ");
+          System.out.print(". _ _ _ _  ");
           break;
         case 2:
-          System.out.print(". . _ _ _ ");
+          System.out.print(". . _ _ _  ");
           break;
         case 3:
-          System.out.print(". . . _ _ ");
+          System.out.print(". . . _ _  ");
           break;
         case 4:
-          System.out.print(". . . . _ ");
+          System.out.print(". . . . _  ");
           break;
         case 5:
-          System.out.print(". . . . . ");
+          System.out.print(". . . . .  ");
           break;
         case 6:
-          System.out.print("_ . . . . ");
+          System.out.print("_ . . . .  ");
           break;
         case 7:
-          System.out.print("_ _ . . . ");
+          System.out.print("_ _ . . .  ");
           break;
         case 8:
-          System.out.print("_ _ _ . . ");
+          System.out.print("_ _ _ . .  ");
           break;
         case 9:
-          System.out.print("_ _ _ _ . ");
+          System.out.print("_ _ _ _ .  ");
           break;
         default:
       }
@@ -70,7 +70,7 @@ public class Ex11mcruzlp2 {
         potencia = potencia * 10;
       }
 
-      numRecortado = numRecortado - primerDigito * potencia;
+      numRecortado = numIntroducido - primerDigito * potencia;
       numDigitos--;
     } while (numDigitos != 0);
   }
