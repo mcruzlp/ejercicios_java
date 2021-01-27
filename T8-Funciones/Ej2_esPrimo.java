@@ -1,4 +1,4 @@
-/*
+/**
  * Ejercicios 1-14
  * Crea una biblioteca de funciones matemáticas que contenga las siguientes
  * funciones. Recuerda que puedes usar unas dentro de otras si es necesario.
