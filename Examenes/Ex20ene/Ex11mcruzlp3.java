@@ -13,18 +13,32 @@ public class Ex11mcruzlp3 {
 
   public static void main(String[] args) {
     
-    boolean check;
-    long numIntroducido;
-
+    System.out.print("Introduzca un número: ");
     Scanner s = new Scanner(System.in);
 
-    do {
+    long numIntroducido;
+    long num; //crea una copia del número introducido por teclado
+
+    boolean check;
+    do {//comprueba si el número tiene una cantidad de dígitos par
       check = true;
 
-      System.out.print("Introduzca un número: ");
       numIntroducido = Long.parseLong(s.nextLine());
 
-      if (numIntroducido % 2 != 0) {
+      num = numIntroducido;
+      long aux = num;
+      int cantidadDigitos = 0;
+
+      if (num > 10) {
+        while (aux != 0) {
+          aux /= 10;
+          cantidadDigitos++;
+        }
+      } else if (num < 10) {
+        cantidadDigitos = 1;
+      }
+
+      if (cantidadDigitos % 2 != 0) {
         System.out.println("Lo siento. El número introducido tiene longitud "
           + "impar, no se puede partir en trocitos.");
         System.out.println("Vuelva a intentarlo.");
@@ -32,30 +46,35 @@ public class Ex11mcruzlp3 {
       }
     } while (!check);
 
-    long num = numIntroducido;
     long trozo = numIntroducido;
     long primeraPareja;
-    long numParejas = 1;
-    long numDivisiones;
-    long i = 1;
-    
-    //valor de la primera pareja y número de parejas.
-    while (num > 100){
-      num = num / 100;
-      numParejas++;
-    }
-    
-    primeraPareja = num;
-    
-    //cálculo de cuántas veces hay que recortar el número.
-    numDivisiones = numParejas*2 - primeraPareja;
-    
-    //recorte del número.
-    while (i <= numDivisiones) {
-      trozo = trozo / 10;
-      i++;
-    }
-    
-    System.out.println("Los trocitos del número son: " + trozo);
+    long numDivisiones = 1;
+
+    System.out.println("Los trocitos del número son los siguientes: ");
+
+    do {
+
+      long numParejas = 1;
+      num = trozo;
+      //valor de la primera pareja y número de parejas.
+      if (trozo < 100) {
+        System.out.println(trozo);
+        numDivisiones = 0;
+      } else {
+        while (trozo > 100) {
+          trozo /= 100;
+          numParejas++;
+        }
+        
+        System.out.println(trozo);
+        
+        numDivisiones = numParejas - 1;
+        primeraPareja = trozo;
+
+        long potencia = (long) Math.pow(100, numDivisiones);
+
+        trozo = num - primeraPareja * potencia;
+      }
+    } while (numDivisiones != 0);
   }
 }
