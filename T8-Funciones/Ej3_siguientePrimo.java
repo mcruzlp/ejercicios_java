@@ -1,16 +1,7 @@
-/**
- * Ejercicios 1-14
- * Crea una biblioteca de funciones matemáticas que contenga las siguientes
- * funciones. Recuerda que puedes usar unas dentro de otras si es necesario.
- * Observa bien lo que hace cada función ya que, si las implementas en el orden
- * adecuado, te puedes ahorrar mucho trabajo. Por ejemplo, la función esCapicua
- * resulta trivial teniendo voltea y la función siguientePrimo también es muy fácil de
- * implementar teniendo esPrimo.
- *
- * Ejercicio 3. siguientePrimo: Devuelve el menor primo que es mayor al número que
- * se pasa como parámetro.
- *
- * @author cruz
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package t8_funciones;
 
@@ -18,7 +9,10 @@ import java.util.Scanner;
 import static misfunciones.Matemáticas.esPrimo;
 import static misfunciones.Matemáticas.siguientePrimo;
 
-
+/**
+ *
+ * @author cruz
+ */
 public class Ej3_siguientePrimo {
 
   /**

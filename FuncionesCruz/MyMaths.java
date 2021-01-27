@@ -1,7 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Aquí se encuentran las funciones matemáticas que he ido creando a lo largo
+ * del curso.
  */
 package misfunciones;
 
@@ -9,7 +8,7 @@ package misfunciones;
  *
  * @author cruz
  */
-public class Matemáticas {
+public class MyMaths {
 
   /**
    * ****** ES PRIMO ******
@@ -45,6 +44,22 @@ public class Matemáticas {
     } while(esPrimo(x) == false);
     
     return x;
+  }
+  
+  /**
+   * ****** POTENCIA ******
+   * 
+   * 
+   * @param base número que hay que multiplicar por sí mismo.
+   * @param exp número de veces que hay que multiplicarlo.
+   * @return devuelve la potencia calculada.
+   */
+  
+  public static double potencia(double base, double exp) {
+  
+    double potencia = Math.pow(base, exp);
+    
+    return potencia;
   }
 
 }
