@@ -6,14 +6,14 @@
 package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.Matemáticas.esPrimo;
-
+import static misfunciones.MyMaths.esPrimo;
+import static misfunciones.MyMaths.siguientePrimo;
 
 /**
  *
  * @author cruz
  */
-public class Ej2_esPrimo {
+public class Ej03_siguientePrimo {
 
   /**
    * @param args the command line arguments
@@ -26,6 +26,20 @@ public class Ej2_esPrimo {
     
     System.out.println(esPrimo(numIntroducido));
     
+    System.out.println("¿Quiere consultar cuál es el número primo mayor más"
+      + " cercano? Sí (pulse 1) No (pulse 2)");
+    int comprueba = Integer.parseInt(s.nextLine());
+    
+    switch (comprueba){
+      case 1:
+        System.out.println("El siguiente número primo es: ");
+        System.out.println(siguientePrimo(numIntroducido));
+        break;
+      case 2:
+        System.out.println("Ok, hasta luego");
+        break;
+      default:
+    }
   }
-
+  
 }

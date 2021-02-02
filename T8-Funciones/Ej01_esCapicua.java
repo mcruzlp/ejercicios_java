@@ -6,7 +6,8 @@
  * resulta trivial teniendo voltea y la función siguientePrimo también es muy
  * fácil de implementar teniendo esPrimo.
  * 
- * Ejercicio 4. potencia: Dada una base y un exponente devuelve la potencia.
+ * Ejercicio 1. esCapicua: Devuelve verdadero si el número que se pasa como 
+ * parámetro es capicúa y falso en caso contrario.
  * 
  *
  * @author cruz
@@ -16,20 +17,17 @@
 package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.potencia;
+import static misfunciones.MyMaths.esCapicua;
 
-public class Ej4_potencia {
-  /**
-   * @param args the command line arguments
-   */
+public class Ej01_esCapicua {
+
   public static void main(String[] args) {
-    System.out.println("Introduzca la base y el exponente de la potencia: ");
+    System.out.println("Introduzca el número que desea comprobar si es capicua: ");
     
     Scanner s = new Scanner(System.in);
-    double base = Double.parseDouble(s.nextLine());
-    double exp = Double.parseDouble(s.nextLine());
+    int numIntroducido = Integer.parseInt(s.nextLine());
     
-    System.out.println(potencia(base,exp));
+    System.out.println(esCapicua(numIntroducido));
   }
   
 }
