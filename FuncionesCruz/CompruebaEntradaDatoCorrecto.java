@@ -1,12 +1,12 @@
+/**
+ * @author cruz
+ * 
+ */
 package misfunciones;
 
 import java.util.Scanner;
 
-/**
- *
- * @author cruz
- */
-public class CompruebaDato {
+public class CompruebaEntradaDatoCorrecto {
 
   public static void main(String[] args) {
     

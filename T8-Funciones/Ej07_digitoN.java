@@ -6,8 +6,8 @@
  * resulta trivial teniendo voltea y la función siguientePrimo también es muy
  * fácil de implementar teniendo esPrimo.
  * 
- * Ejercicio 1. esCapicua: Devuelve verdadero si el número que se pasa como 
- * parámetro es capicúa y falso en caso contrario.
+ * Ejercicio 7. digitoN: Devuelve el dígito que está en la posición n de un 
+ * número entero. Se empieza contando por el 0 y de izquierda a derecha.
  * 
  *
  * @author cruz
@@ -17,17 +17,21 @@
 package t8;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.esCapicua;
+import misfunciones.MyMaths;
 
-public class Ej01_esCapicua {
+public class Ej07_digitoN {
 
   public static void main(String[] args) {
-    System.out.print("Introduzca el número que desea comprobar si es capicua: ");
-    
     Scanner s = new Scanner(System.in);
-    int numIntroducido = Integer.parseInt(s.nextLine());
+
+    System.out.print("Introduzca un número: ");
+    long numIntroducido = Long.parseLong(s.nextLine());
     
-    System.out.println(esCapicua(numIntroducido));
+    System.out.print("Introduzca la posición que desea consultar: ");
+    int posicion = Integer.parseInt(s.nextLine());
+
+    System.out.println("El dígito de la posición elegida es: " + 
+      MyMaths.posicionDigito(numIntroducido, posicion));
   }
   
 }

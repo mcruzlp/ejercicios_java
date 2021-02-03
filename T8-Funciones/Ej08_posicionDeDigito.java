@@ -14,7 +14,7 @@
  *
  * 
  */
-package t8_funciones;
+package t8;
 
 import java.util.Scanner;
 import static misfunciones.MyMaths.encuentraDigito;

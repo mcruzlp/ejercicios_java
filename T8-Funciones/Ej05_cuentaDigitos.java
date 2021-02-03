@@ -6,8 +6,7 @@
  * resulta trivial teniendo voltea y la función siguientePrimo también es muy
  * fácil de implementar teniendo esPrimo.
  * 
- * Ejercicio 1. esCapicua: Devuelve verdadero si el número que se pasa como 
- * parámetro es capicúa y falso en caso contrario.
+ * Ejercicio 5. digitos: Cuenta el número de dígitos de un número entero.
  * 
  *
  * @author cruz
@@ -17,17 +16,16 @@
 package t8;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.esCapicua;
+import misfunciones.MyMaths;
 
-public class Ej01_esCapicua {
+public class Ej05_cuentaDigitos {
 
   public static void main(String[] args) {
-    System.out.print("Introduzca el número que desea comprobar si es capicua: ");
+    System.out.println("Introduzca un número: ");
     
     Scanner s = new Scanner(System.in);
-    int numIntroducido = Integer.parseInt(s.nextLine());
-    
-    System.out.println(esCapicua(numIntroducido));
+    long num = Long.parseLong(s.nextLine());
+    System.out.println("El número tiene " + MyMaths.cuentaDigitos(num) + " dígitos.");
   }
   
 }

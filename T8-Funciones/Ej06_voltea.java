@@ -6,28 +6,27 @@
  * resulta trivial teniendo voltea y la función siguientePrimo también es muy
  * fácil de implementar teniendo esPrimo.
  * 
- * Ejercicio 1. esCapicua: Devuelve verdadero si el número que se pasa como 
- * parámetro es capicúa y falso en caso contrario.
+ * Ejercicio 6. voltea: Le da la vuelta a un número.
  * 
  *
  * @author cruz
  *
  * 
  */
-package t8;
+package misfunciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.esCapicua;
+import static misfunciones.MyMaths.voltea;
 
-public class Ej01_esCapicua {
+public class Ej06_voltea {
 
   public static void main(String[] args) {
-    System.out.print("Introduzca el número que desea comprobar si es capicua: ");
+     System.out.println("Introduzca el número al que desea darle la vuelta: ");
     
     Scanner s = new Scanner(System.in);
     int numIntroducido = Integer.parseInt(s.nextLine());
     
-    System.out.println(esCapicua(numIntroducido));
+    System.out.println(voltea(numIntroducido));
   }
   
 }
