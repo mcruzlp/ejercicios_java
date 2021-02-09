@@ -285,17 +285,75 @@ public class MyMaths {
   /**
    * ****** QUITA POR DELANTE INT ******
    *
-   * @param num número del que se quiere recortar la parte delantera
+   * @param numInicial número del que se quiere recortar la parte delantera 
    * @param n cantidad de dígitos que se quieren recortar
    * @return devuelve el número recortado
    */
   
-  public static int quitaPorDelante(int num, int n) {
+  public static int quitaPorDelante(int numInicial, int n) {
 
-    
-    return num;
+    int copia = numInicial;
+    int numDivisiones = 0;
+    while (MyMaths.cuentaDigitos(copia) > n) {
+        copia /= 10;
+        numDivisiones++;
+      }
+    int numFinal = numInicial - copia * (int)Math.pow(10,numDivisiones);
+    return numFinal;
   }
-
+  
+  /******** PEGA UN DÍGITO AL FINAL DEL NÚMERO************
+   *
+   * @param numInicial número al que se quiere pegar un dígito
+   * @param n dígito que se quiere añadir
+   * @return el número con un dígito más
+   */
+  public static int pegaPorDetras(int numInicial, int n) {
+    
+    int numFinal = numInicial*10 + n;
+    return numFinal;
+  }
+  
+  /******** PEGA UN DÍGITO AL PRINCIPIO DEL NÚMERO************
+   *
+   * @param numInicial número al que se quiere pegar un dígito
+   * @param n dígito que se quiere añadir
+   * @return el número con un dígito más
+   */
+  public static int pegaPorDelante(int numInicial, int n) {
+    int numFinal = n * (int)Math.pow(10, cuentaDigitos(numInicial)) + numInicial;
+    return numFinal;
+  }
+  
+  /********** TROZO DE UN NÚMERO ***************
+   * 
+   * @param num número que quiero trocear
+   * @param inicio primera cifra del trozo
+   * @param fin última cifra del trozo
+   * @return número resultante de recortar los dígitos sobrantes
+   */
+  
+  public static int trozoDeNumero(int num, int inicio, int fin) {
+    
+    int numDigitos = cuentaDigitos(num);
+    num = quitaPorDelante(num,inicio);
+    int trozo = quitaPorDetras(num,numDigitos - fin - 1);
+    
+    return trozo;
+  }
+  
+  /********* JUNTA NÚMEROS ************************************
+   * 
+   * @param num1 número que irá delante en el número final
+   * @param num2 número que irá detrás en el número final
+   * @return los números anteriores pegados
+   */
+  public static int juntaNumeros(int num1, int num2) {
+    
+    int numFinal = num1 * (int)Math.pow(10, cuentaDigitos(num2)) + num2;
+    return numFinal;
+  }
+  
   /**
    * ******* ENCUENTRA LA POSICIÓN DE UN NÚMERO INT **************
    *
@@ -339,6 +397,29 @@ public class MyMaths {
 //  
 //    return num;
 //  }
+  
+  /******** PASA DE DECIMAL A BINARIO ************
+   * 
+   * @param numDecimal número que quires pasar a binario
+   * @return numero en binario
+   */
+  
+  public static long decimalBinario(int numDecimal) {
+
+    if (numDecimal == 0) {
+      return 0;
+    }
+    long binario = 1;
+    while (numDecimal > 1) {
+      binario = MyMaths.pegaPorDetras(binario, numDecimal % 2);
+      numDecimal = numDecimal / 2;
+    }
+    binario = MyMaths.pegaPorDetras(binario, 1);
+    binario = MyMaths.voltea(binario);
+    binario = MyMaths.quitaPorDetras(binario, 1);
+    return binario;
+  }
+  
   /**
    * ******* CALCULA MEDIA DOUBLE **************
    *
@@ -405,7 +486,7 @@ public class MyMaths {
    * 
    */
   
-  public static void probabilidad() {
+//  public static void probabilidad() {
   
   }
 }
