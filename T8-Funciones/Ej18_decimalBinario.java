@@ -18,10 +18,8 @@ public class Ej18_decimalBinario {
     Scanner s = new Scanner(System.in);
     int numDecimal = Integer.parseInt(s.nextLine());
 
-    System.out.println(numDecimal + " = "
-      + MyMaths.decimalBinario(numDecimal));
+    System.out.println(numDecimal + "(10  = "
+      + MyMaths.decimalBinario(numDecimal) + "(2");
 
   }
-
-  
 }

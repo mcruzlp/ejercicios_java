@@ -6,9 +6,10 @@
  * @author cruz
  *
  */
-package t8_funciones;
+package javaapplication24;
 
 import java.util.Scanner;
+import misfunciones.MyMaths;
 
 public class Ej17_binarioDecimal {
 
@@ -18,7 +19,8 @@ public class Ej17_binarioDecimal {
     Scanner s = new Scanner(System.in);
     long numIntroducido = Long.parseLong(s.nextLine());
     
-    System.out.println(numIntroducido + " = " + binarioDecimal(numIntroducido));
+    System.out.println(numIntroducido + " = " 
+      + MyMaths.binarioDecimal(numIntroducido));
   }
   
 }
