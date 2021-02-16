@@ -289,7 +289,7 @@ public class MyMaths {
 
     int copia = numInicial;
     int numDivisiones = 0;
-    while (MyMaths.cuentaDigitos(copia) > n) {
+    while (cuentaDigitos(copia) > n) {
       copia /= 10;
       numDivisiones++;
     }
@@ -416,15 +416,30 @@ public class MyMaths {
     long binario = 1;
 
     while (numDecimal > 1) {
-      binario = MyMaths.pegaPorDetras(binario, numDecimal % 2);
+      binario = pegaPorDetras(binario, numDecimal % 2);
       numDecimal /= 2;
     }
-    binario = MyMaths.pegaPorDetras(binario, 1);
-    binario = MyMaths.voltea(binario);
-    binario = MyMaths.quitaPorDetras(binario, 1);
+    binario = pegaPorDetras(binario, 1);
+    binario = voltea(binario);
+    binario = quitaPorDetras(binario, 1);
 
     return binario;
   }
+  
+  /************ CAMBIA DE  HEXADECIMAL
+   * 
+   * @param num que se quiere cambiar de base
+   * @param base1
+   * @param base2 hexadecimal
+   * @return 
+   */
+  public static String cambiaDeBase(int num, int base1, int base2) {
+  
+    String numHex = "";
+    return numHex;
+  }
+  
+  
 
   /**
    * ******* CALCULA MEDIA DOUBLE **************
