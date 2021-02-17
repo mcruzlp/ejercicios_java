@@ -21,6 +21,19 @@ public class Arrays {
     }
     return cadena;
   }
+  /************ CONVIERTE ARRAY EN INT *********
+   * 
+   * @param a array que se quiere convertir
+   * @return el array en forma de num
+   */
+  public static int convierteArrayEnInt(int[] a) {
+    int numVolteado = 0;
+    for (int n : a) {
+      numVolteado = MyMaths.pegaPorDelante(numVolteado, n);
+    }
+    int num = MyMaths.voltea(numVolteado);
+    return num;
+  }
   /******* PINTA ARRAY *****************
    * 
    * @param a array que se quiere imprimir
