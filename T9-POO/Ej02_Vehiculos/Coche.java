@@ -1,4 +1,4 @@
-package t9.poo;
+package Ej02_Vehiculos;
 
 /**
  *

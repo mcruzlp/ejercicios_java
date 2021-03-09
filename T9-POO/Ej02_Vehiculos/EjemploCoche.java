@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package t9.poo;
+package Ej02_Vehiculos;
 
 /**
  *
