@@ -6,7 +6,7 @@
 package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.esPrimo;
+import funcionesCruz.MyMaths;
 
 
 /**
@@ -24,7 +24,7 @@ public class Ej02_esPrimo {
     Scanner s = new Scanner(System.in);
     int numIntroducido = Integer.parseInt(s.nextLine());
     
-    System.out.println(esPrimo(numIntroducido));
+    System.out.println(MyMaths.esPrimo(numIntroducido));
     
   }
 

@@ -14,10 +14,10 @@
  *
  * 
  */
-package t8;
+package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.esCapicua;
+import funcionesCruz.MyMaths;
 
 public class Ej01_esCapicua {
 
@@ -27,7 +27,7 @@ public class Ej01_esCapicua {
     Scanner s = new Scanner(System.in);
     int numIntroducido = Integer.parseInt(s.nextLine());
     
-    System.out.println(esCapicua(numIntroducido));
+    System.out.println(MyMaths.esCapicua(numIntroducido));
   }
   
 }

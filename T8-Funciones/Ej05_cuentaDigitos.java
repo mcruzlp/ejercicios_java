@@ -13,7 +13,7 @@
  *
  * 
  */
-package t8;
+package t8_funciones;
 
 import java.util.Scanner;
 import misfunciones.MyMaths;

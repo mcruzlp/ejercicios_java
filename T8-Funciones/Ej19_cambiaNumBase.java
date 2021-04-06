@@ -7,7 +7,7 @@
  * @author cruz
  *
  */
-package T8_funciones;
+package t8_funciones;
 
 import java.util.Scanner;
 import misfunciones.MyMaths;

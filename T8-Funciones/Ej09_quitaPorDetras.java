@@ -12,10 +12,10 @@
  * @author cruz
  * 
  */
-package javaapplication24;
+package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.quitaPorDetras;
+import funcionesCruz.MyMaths;
 
 public class Ej09_quitaPorDetras {
 
@@ -29,7 +29,7 @@ public class Ej09_quitaPorDetras {
     int digitosFuera = Integer.parseInt(s.nextLine());
     
     System.out.println("El número recortado es "
-      + quitaPorDetras(numIntroducido,digitosFuera));
+      + MyMaths.quitaPorDetras(numIntroducido,digitosFuera));
   }
   
 }

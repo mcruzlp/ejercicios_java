@@ -1,71 +1,87 @@
 package ejemplos;
 
 /**
- * GatoSimple.java Definición de la clase GatoSimple
+ * Gato.java Definición de la clase Gato
  *
  * @author Luis José Sánchez
  */
-public class Gato {
-// atributos /////////////////////////////
+public class Gato extends Animal implements Mascota {
 
-  String color;
-  String raza;
-  String sexo;
-  int edad;
-  double peso;
+  // atributos ////////////////////////////
+  private final String codigo;
 
-// métodos ///////////////////////////////
-  // constructor
-  Gato(String s) {
-    this.sexo = s;
-  }
-  // getter
-
-  String getSexo() {
-    return this.sexo;
+  // métodos //////////////////////////////
+  // constructor*************************
+  public Gato(Sexo s, String c) {
+    super(s);
+    this.codigo = c;
   }
 
-  //Otros métodos
-  
+  dGato(Sexo sexo) {
+    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+  }
+
+  dGato() {
+    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+  }
+
+  // otros métodos************************
+  @Override
+  public String getCodigo() {
+    return this.codigo;
+  }
+
   /**
-   * Hace que el gato maulle
+   * Hace que el gato emita sonidos.
    */
-  void maulla() {
+  @Override
+  public void hazRuido() {
+    this.maulla();
+    this.ronronea();
+  }
+
+  /**
+   * Hace que el gato maulle.
+   */
+  public void maulla() {
     System.out.println("Miauuuu");
   }
 
   /**
    * Hace que el gato ronronee
    */
-  void ronronea() {
+  public void ronronea() {
     System.out.println("mrrrrrr");
   }
 
   /**
    * Hace que el gato coma. A los gatos les gusta el pescado, si le damos otra
-   * comida la rechazará.
+   * comida * la rechazará.
    *
-   ** @param comida la comida que se le ofrece al gato
+   * @param comida la comida que se le ofrece al gato
    */
-  void come(String comida) {
+  @Override
+  public void come(String comida) {
     if (comida.equals("pescado")) {
-      System.out.println("Hmmmm, gracias");
+      super.come(comida);
     } else {
       System.out.println("Lo siento, yo sólo como pescado");
     }
   }
 
   /**
-   * Pone a pelear dos gatos. Sólo se van a pelear dos machos entre sí.
+   * Pone a pelear al gato contra otro animal. Solo se van a pelear dos machos
+   * entre sí.
    *
-   * @param contrincante es el gato contra el que pelear
+   * @param contrincante es el animal contra el que pelear
    */
-  void peleaCon(Gato contrincante) {
-    if (this.sexo.equals("hembra")) {
+  @Override
+  public void peleaCon(Animal contrincante) {
+    if (this.getSexo() == Sexo.HEMBRA) {
       System.out.println("no me gusta pelear");
     } else {
-      if (contrincante.getSexo().equals("hembra")) {
-        System.out.println("no peleo contra gatas");
+      if (contrincante.getSexo() == Sexo.HEMBRA) {
+        System.out.println("no peleo contra hembras");
       } else {
         System.out.println("ven aquí que te vas a enterar");
       }

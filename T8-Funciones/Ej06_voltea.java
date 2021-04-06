@@ -13,10 +13,10 @@
  *
  * 
  */
-package misfunciones;
+package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.voltea;
+import funcionesCruz.MyMaths;
 
 public class Ej06_voltea {
 
@@ -26,7 +26,7 @@ public class Ej06_voltea {
     Scanner s = new Scanner(System.in);
     int numIntroducido = Integer.parseInt(s.nextLine());
     
-    System.out.println(voltea(numIntroducido));
+    System.out.println(MyMaths.voltea(numIntroducido));
   }
   
 }

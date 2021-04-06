@@ -11,7 +11,7 @@
  * @author cruz
  * 
  */
-package javaapplication24;
+package t8_funciones;
 
 import java.util.Scanner;
 import  misfunciones.MyMaths;

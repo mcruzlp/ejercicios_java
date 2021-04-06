@@ -5,7 +5,7 @@
  * @author cruz
  *
  */
-package javaapplication24;
+package t8_funciones;
 
 import misfunciones.MyMaths;
 

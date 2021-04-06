@@ -12,10 +12,10 @@
  * @author cruz
  * 
  */
-package javaapplication24;
+package t8_funciones;
 
 import java.util.Scanner;
-import misfunciones.MyMaths;
+import funcionesCruz.MyMaths;
 
 public class Ej13_trozoDeNumero {
 
@@ -26,7 +26,7 @@ public class Ej13_trozoDeNumero {
     int numIntroducido = Integer.parseInt(s.nextLine());
     
     System.out.println("El número recortado es " 
-      + MyMaths.trozoDeNumero(numIntroducido));
+      /*+ MyMaths.trozoDeNumero(numIntroducido)*/);
   }
   
 }

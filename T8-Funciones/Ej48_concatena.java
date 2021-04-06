@@ -9,11 +9,10 @@
  * @author cruz
  *
  */
-package javaapplication24;
+package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.Arrays.pintaArray;
-import static misfunciones.Arrays.concatena;
+import funcionesCruz.Arrays;
 
 public class Ej48_concatena {
 
@@ -38,7 +37,7 @@ public class Ej48_concatena {
     }
 
     System.out.println("El array resultante es: ");
-    pintaArray(concatena(a,b));
+    Arrays.pintaArray(Arrays.concatena(a,b));
 
   }
 

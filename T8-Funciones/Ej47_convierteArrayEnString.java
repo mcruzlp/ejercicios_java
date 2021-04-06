@@ -12,9 +12,9 @@
  * @author cruz
  *
  */
-package javaapplication24;
+package t8_funciones;
 
-import static misfunciones.Arrays.convierteArrayEnString;
+import funcionesCruz.Arrays;
 
 public class Ej47_convierteArrayEnString {
 
@@ -30,6 +30,6 @@ public class Ej47_convierteArrayEnString {
     }
     
     System.out.println("El número transformado es: " 
-      + convierteArrayEnString(numArray));
+      + Arrays.convierteArrayEnString(numArray));
   }
 }

@@ -5,7 +5,7 @@
  * @author cruz
  *
  */
-package misfunciones;
+package funcionesCruz;
 
 import java.util.Scanner;
 

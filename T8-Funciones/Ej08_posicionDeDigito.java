@@ -14,10 +14,10 @@
  *
  * 
  */
-package t8;
+package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.encuentraDigito;
+import funcionesCruz.MyMaths;
 
 public class Ej08_posicionDeDigito {
 
@@ -30,9 +30,9 @@ public class Ej08_posicionDeDigito {
     System.out.print("Introduzca el valor del que quiere conocer la posición: ");
     int digito = Integer.parseInt(s.nextLine());
     
-    if (encuentraDigito(numIntroducido,digito)!= -1){ 
+    if (MyMaths.encuentraNum(numIntroducido,digito)!= -1){ 
       System.out.println("La primera vez que aparece el dígito en el número, es"
-        + " en la posición: " + encuentraDigito(numIntroducido,digito));
+        + " en la posición: " + MyMaths.encuentraNum(numIntroducido,digito));
     } else System.out.println("El dígito no está en el número.");
   }
   

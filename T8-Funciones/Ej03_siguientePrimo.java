@@ -5,9 +5,8 @@
  */
 package t8_funciones;
 
+import funcionesCruz.MyMaths;
 import java.util.Scanner;
-import static misfunciones.MyMaths.esPrimo;
-import static misfunciones.MyMaths.siguientePrimo;
 
 /**
  *
@@ -24,7 +23,7 @@ public class Ej03_siguientePrimo {
     Scanner s = new Scanner(System.in);
     int numIntroducido = Integer.parseInt(s.nextLine());
     
-    System.out.println(esPrimo(numIntroducido));
+    System.out.println(MyMaths.esPrimo(numIntroducido));
     
     System.out.println("¿Quiere consultar cuál es el número primo mayor más"
       + " cercano? Sí (pulse 1) No (pulse 2)");
@@ -33,7 +32,7 @@ public class Ej03_siguientePrimo {
     switch (comprueba){
       case 1:
         System.out.println("El siguiente número primo es: ");
-        System.out.println(siguientePrimo(numIntroducido));
+        System.out.println(MyMaths.siguientePrimo(numIntroducido));
         break;
       case 2:
         System.out.println("Ok, hasta luego");

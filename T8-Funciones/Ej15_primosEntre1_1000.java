@@ -8,13 +8,13 @@
  */
 package t8_funciones;
 
-import static misfunciones.MyMaths.esPrimo;
+import funcionesCruz.MyMaths;
 
 public class Ej15_primosEntre1_1000 {
 
   public static void main(String[] args) {
     for (int i = 1; i <= 1000; i++){
-      if (esPrimo(i)) {
+      if (MyMaths.esPrimo(i)) {
         System.out.print(i + " ");
       }
       if (i % 50 == 0){

@@ -16,7 +16,7 @@
 package t8_funciones;
 
 import java.util.Scanner;
-import static misfunciones.MyMaths.potencia;
+import funcionesCruz.MyMaths;
 
 public class Ej04_potencia {
   /**
@@ -29,7 +29,7 @@ public class Ej04_potencia {
     double base = Double.parseDouble(s.nextLine());
     double exp = Double.parseDouble(s.nextLine());
     
-    System.out.println(potencia(base,exp));
+    System.out.println(MyMaths.potencia(base,exp));
   }
   
 }
