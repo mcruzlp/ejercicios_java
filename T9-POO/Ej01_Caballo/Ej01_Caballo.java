@@ -15,7 +15,12 @@ package Ej01_Caballo;
 public class Ej01_Caballo {
 
   public static void main(String[] args) {
-    // TODO code application logic here
+    Caballo Babieca = new Caballo("español","negro","mediano","hembra", 7);
+    Caballo Pegaso = new Caballo();
+    Caballo Rocinante = new Caballo("gris", "macho", 10);
+    Babieca.come();
+    Pegaso.relincha();
+    Rocinante.trota();
   }
   
 }
