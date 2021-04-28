@@ -1,74 +1,33 @@
-package Ej02_Vehiculos;
-
 /**
  *
- * @author cruz
+ * @author Cruz
  */
-public class Coche {
-  
-  // atributos de clase *************************************
-  private static int numCoches = 0;
-  private static int kmTotales = 0;
-  
-  // atributos de instancia *********************************
-  private final String numBastidor = "";
-  private String matricula ="";
-  private String marca ="";
-  private String modelo ="";
-  private int kilometraje = 0;
+package Ej02_Vehiculo;
 
-  // constructor *********************************************
-  public Coche() {
-    Coche.numCoches++;
-  }
+
+public class Coche extends Vehiculo{
   
-  public Coche(String matricula) {
-    this.matricula = matricula;
-    Coche.numCoches++;
-  }
-  
-  public Coche(String matricula, String marca, String modelo) {
-    this.matricula = matricula;
-    this.marca = marca;
-    this.modelo = modelo;
-    Coche.numCoches++;
-  }
-  
-  // getter y setter ******************************************
-  public int getKilometraje() {
-    return this.kilometraje;
+  private String tipoCoche;
+  private int numPuertas;
+  private int potenciaCV;
+
+  public Coche(String tipoCoche, int numPuertas, int potenciaCV, int kilometrosRecorridos) {
+    super(kilometrosRecorridos);
+    this.tipoCoche = tipoCoche;
+    this.numPuertas = numPuertas;
+    this.potenciaCV = potenciaCV;
   }
 
-  public void setKilometraje(int km) {
-    this.kilometraje = km;
+  public void arranca() {
+    this.kilometrosRecorridos = (int)(Math.random()*100);
+    System.out.println("\033[33m El coche ha recorrido " + kilometrosRecorridos 
+      + " km en este tramo");
+    Vehiculo.setKilometrosTotales(Vehiculo.getKilometrosTotales() +
+      kilometrosRecorridos);
   }
 
-  public static int getKmTotal() {
-    return Coche.kmTotales;
-  }
   
   
   
-  // métodos *********************************************
-  public void recorre(int distancia){
-    this.kilometraje += distancia;
-    kmTotales += distancia;
-  }
-  
-  /**
-   *
-   * @return
-   */
-  @Override
-  public String toString() {
-    String resultado = "======================\n";
-    resultado += "Matrícula: " + this.matricula;
-    resultado += "\nMarca: " + this.marca;
-    resultado += "\nModelo: " + this.modelo;
-    resultado += "\nKilómetros recorridos: " + this.kilometraje;
-    resultado += "\n======================\n";
-    
-    return resultado;
-  }
   
 }

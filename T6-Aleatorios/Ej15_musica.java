@@ -90,6 +90,6 @@ public class Ej15_musica {
          break;
        default:
      }
-     System.out.print("||\h");
+     System.out.print("||\n");
   }
 }
