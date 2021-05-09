@@ -6,33 +6,39 @@
  * @author cruz
  *
  */
-package t4;
+package t4.condicional;
 
 import java.util.Scanner;
 
 public class Ej18_primeraCifra {
 
   public static void main(String[] args) {
-    System.out.println("Introduzca un número entero de 5 cifras como máximo: ");
+    System.out.print("Introduzca un número entero de 5 cifras como máximo: ");
 
     Scanner s = new Scanner(System.in);
 
-    int numIntroducido = Integer.parseInt(s.nextLine());
+    int primeraCifra = 0;
+    int cuantasCifras = 1;
+    boolean numOK = true;
 
-    int num = numIntroducido; //copia del número introducido por el usuario
-
-    int primeraCifra;
-
-    if (num < 10) {
-      primeraCifra = num;
-    } else {
-      while (num >= 10) {
-        num /= 10;
+    do {
+      int numIntroducido = Integer.parseInt(s.nextLine());
+      int num = numIntroducido; //copia del número introducido por el usuario
+      if (num < 10) {
+        System.out.println("La primera cifra es: " + num);
+      } else {
+        while (num >= 10) {
+          num /= 10;
+          cuantasCifras++;
+          primeraCifra = num;
+        }
+        if (cuantasCifras <= 5) {
+          System.out.println("La primera cifra es: " + primeraCifra);
+        } else {
+          System.out.print("Lo siento, el número no es válido, inténtelo de nuevo:");
+          numOK = false;
+        }
       }
-      primeraCifra = num;
-    }
-
-    System.out.println("La primera cifra es: " + primeraCifra);
+    } while (!numOK);
   }
-
 }

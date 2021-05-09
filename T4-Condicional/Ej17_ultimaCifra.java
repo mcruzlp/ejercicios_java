@@ -6,7 +6,7 @@
  * @author cruz
  *
  */
-package t4;
+package t4.condicional;
 
 import java.util.Scanner;
 
