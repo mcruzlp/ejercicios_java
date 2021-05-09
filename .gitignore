@@ -1,5 +1,11 @@
-# Compiled class file
+# Compiled class files
 *.class
+
+#Project files
+*.xml
+*.mf
+*.properties
+
 
 #Backup files
 *.bak
@@ -13,7 +19,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
