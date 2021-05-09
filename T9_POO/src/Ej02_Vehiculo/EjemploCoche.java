@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Ej02_Vehiculos;
+package Ej02_Vehiculo;
 
 /**
  *
@@ -11,12 +6,9 @@ package Ej02_Vehiculos;
  */
 public class EjemploCoche {
 
-  /**
-   * @param args the command line arguments
-   */
   public static void main(String[] args) {
     
-    Coche cocheDeJesus = new Coche();
+    Coche_ejemplo cocheDeJesus = new Coche_ejemplo();
     
     cocheDeJesus.recorre(50);
     cocheDeJesus.recorre(50);
@@ -24,7 +16,7 @@ public class EjemploCoche {
     
     System.out.println("Km recorridos por el coche de Jesús: " + cocheDeJesus.getKilometraje());
     
-    Coche cocheDeAdrian = new Coche("9876RTY");
+    Coche_ejemplo cocheDeAdrian = new Coche_ejemplo("9876RTY");
     
     cocheDeAdrian.recorre(50);
     
@@ -33,10 +25,10 @@ public class EjemploCoche {
     System.out.println(cocheDeJesus);
     System.out.println(cocheDeAdrian);
     
-    Coche cocheDeJairo = new Coche("1234FGH", "Dacia", "Sandero");
+    Coche_ejemplo cocheDeJairo = new Coche_ejemplo("1234FGH", "Dacia", "Sandero");
     System.out.println(cocheDeJairo);
     
-    System.out.println(Coche.getKmTotal());
+    System.out.println(Coche_ejemplo.getKmTotal());
     
     
   }

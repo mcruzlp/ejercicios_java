@@ -1,10 +1,10 @@
-package Ej02_Vehiculos;
+package Ej02_Vehiculo;
 
 /**
  *
  * @author cruz
  */
-public class Coche {
+public class Coche_ejemplo {
   
   // atributos de clase *************************************
   private static int numCoches = 0;
@@ -18,20 +18,20 @@ public class Coche {
   private int kilometraje = 0;
 
   // constructor *********************************************
-  public Coche() {
-    Coche.numCoches++;
+  public Coche_ejemplo() {
+    Coche_ejemplo.numCoches++;
   }
   
-  public Coche(String matricula) {
+  public Coche_ejemplo(String matricula) {
     this.matricula = matricula;
-    Coche.numCoches++;
+    Coche_ejemplo.numCoches++;
   }
   
-  public Coche(String matricula, String marca, String modelo) {
+  public Coche_ejemplo(String matricula, String marca, String modelo) {
     this.matricula = matricula;
     this.marca = marca;
     this.modelo = modelo;
-    Coche.numCoches++;
+    Coche_ejemplo.numCoches++;
   }
   
   // getter y setter ******************************************
@@ -44,7 +44,7 @@ public class Coche {
   }
 
   public static int getKmTotal() {
-    return Coche.kmTotales;
+    return Coche_ejemplo.kmTotales;
   }
   
   

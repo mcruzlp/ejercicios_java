@@ -1,5 +1,4 @@
 /**
- *
  * @author cruz
  */
 package Ej01_Caballo;

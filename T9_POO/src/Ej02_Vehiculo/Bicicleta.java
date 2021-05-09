@@ -6,10 +6,10 @@ package Ej02_Vehiculo;
 
 public class Bicicleta extends Vehiculo{
   
-  private String tipoBici;
-  private int talla;
-  private int diametroRueda;
-  private int numPlatos;
+  private final String tipoBici;
+  private final int talla;
+  private final int diametroRueda;
+  private final int numPlatos;
 
   public Bicicleta(String tipoBici, int talla, int diametroRueda, int numPlatos,
     int kilometrosRecorridos) {

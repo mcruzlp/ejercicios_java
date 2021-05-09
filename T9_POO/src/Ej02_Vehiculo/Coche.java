@@ -7,9 +7,9 @@ package Ej02_Vehiculo;
 
 public class Coche extends Vehiculo{
   
-  private String tipoCoche;
-  private int numPuertas;
-  private int potenciaCV;
+  private final String tipoCoche;
+  private final int numPuertas;
+  private final int potenciaCV;
 
   public Coche(String tipoCoche, int numPuertas, int potenciaCV, int kilometrosRecorridos) {
     super(kilometrosRecorridos);
