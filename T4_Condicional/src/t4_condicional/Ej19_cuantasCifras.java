@@ -6,7 +6,7 @@
  * @author cruz
  *
  */
-package t4.condicional;
+//package t4.condicional;
 
 import static java.lang.Math.abs;
 import java.util.Scanner;
@@ -23,19 +23,19 @@ public class Ej19_cuantasCifras {
 
     do {
       int numIntroducido = Integer.parseInt(s.nextLine());
-      int num = abs(numIntroducido); //copia del número introducido
-      
+      int num = abs(numIntroducido); // copia del número introducido
+
       while (num >= 10) {
         num /= 10;
         cuantasCifras++;
       }
       if (cuantasCifras <= 5) {
-        System.out.printf("El número tiene %d cifra(s)\n",cuantasCifras);
+        System.out.printf("El número tiene %d cifra(s)\n", cuantasCifras);
       } else {
         System.out.print("Lo siento, el número no es válido, inténtelo de nuevo:");
         numOK = false;
       }
-    
+
     } while (!numOK);
   }
 }

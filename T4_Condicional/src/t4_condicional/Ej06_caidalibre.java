@@ -6,7 +6,7 @@
  * @author cruz
  *
  */
-package t4;
+//package t4;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Ej06_caidalibre {
     Scanner s = new Scanner(System.in);
     double h = Double.parseDouble(s.nextLine());
     double g = 9.81;
-    double t = Math.sqrt(2*h/g);
-    System.out.printf("El objeto tardará %.2f segundos en llegar al suelo.\n",t);
+    double t = Math.sqrt(2 * h / g);
+    System.out.printf("El objeto tardará %.2f segundos en llegar al suelo.\n", t);
   }
 }

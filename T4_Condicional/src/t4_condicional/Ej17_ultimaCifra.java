@@ -6,7 +6,7 @@
  * @author cruz
  *
  */
-package t4.condicional;
+//package t4.condicional;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ public class Ej17_ultimaCifra {
 
     int numIntroducido = Integer.parseInt(s.nextLine());
 
-    int num = numIntroducido; //copia del número introducido por el usuario
+    int num = numIntroducido; // copia del número introducido por el usuario
 
     int ultimaCifra;
 
@@ -27,7 +27,7 @@ public class Ej17_ultimaCifra {
       ultimaCifra = num;
     } else {
       num /= 10;
-      ultimaCifra = numIntroducido - num*10;
+      ultimaCifra = numIntroducido - num * 10;
     }
 
     System.out.println("La última cifra es: " + ultimaCifra);

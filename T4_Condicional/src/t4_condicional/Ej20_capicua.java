@@ -6,7 +6,7 @@
  * @author cruz
  *
  */
-package t4.condicional;
+//package t4.condicional;
 
 import java.util.Scanner;
 
@@ -24,26 +24,33 @@ public class Ej20_capicua {
 
     do {
       int numIntroducido = Integer.parseInt(s.nextLine());
-      int cuentaCifras = numIntroducido; //copia del número introducido
+      int cuentaCifras = numIntroducido; // copia del número introducido
       int num = numIntroducido;
-      
+
       while (cuentaCifras >= 10) {
         cuentaCifras /= 10;
         cuantasCifras++;
       }
-      
+
       if (cuantasCifras > 5) {
         System.out.print("Lo siento, el número no es válido, inténtelo de nuevo:");
         numOK = false;
-      } else { 
-        if (num < 10) {
-          System.out.printf("El %d es capicúa\n",num);
-        } else {                //numComparaciones = cuantasCifras/2;
+      } else {
+        if (num < 10) {// los números de una cifra son capicúas también.
+          System.out.printf("El %d es capicúa\n", numIntroducido);
+        } else { // numComparaciones = cuantasCifras/2;
           while (num >= 10) {
             num /= 10;
+            ultimaCifra = numIntroducido - num * 10;
             cuantasCifras++;
             primeraCifra = num;
-            
+            if (primeraCifra != ultimaCifra) {
+              System.out.printf("El %d no es capicúa\n", numIntroducido);
+              num = 0;
+            }
+          }
+          if (num != 0) {
+            System.out.printf("El %d es capicúa\n", numIntroducido);
           }
         }
       }

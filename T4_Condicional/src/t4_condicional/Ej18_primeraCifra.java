@@ -6,7 +6,7 @@
  * @author cruz
  *
  */
-package t4.condicional;
+//package t4.condicional;
 
 import java.util.Scanner;
 
@@ -23,7 +23,7 @@ public class Ej18_primeraCifra {
 
     do {
       int numIntroducido = Integer.parseInt(s.nextLine());
-      int num = numIntroducido; //copia del número introducido por el usuario
+      int num = numIntroducido; // copia del número introducido por el usuario
       if (num < 10) {
         System.out.println("La primera cifra es: " + num);
       } else {

@@ -9,7 +9,7 @@
  * @author cruz
  *
  */
-package t4;
+//package t4;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ public class Ej12_cuestionario {
     System.out.println("***CUESTIONARIO DE PROGRAMACIÓN***");
     Scanner s = new Scanner(System.in);
     int nota = 0;
-    
+
     System.out.println("Pregunta 1");
     System.out.println("¿Qué es un casting?");
     System.out.println("a)Una selección de personas para una obra");
@@ -27,8 +27,8 @@ public class Ej12_cuestionario {
     System.out.println("c)Ambas respuestas son correctas");
     System.out.println("d)Ninguna respuesta es correcta");
     int respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es incorrecta");
         break;
@@ -37,14 +37,14 @@ public class Ej12_cuestionario {
         break;
       case (3):
         System.out.println("La respuesta es correcta");
-         nota++;
+        nota++;
         break;
       case (4):
         System.out.println("La respuesta es incorrecta");
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 2");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -52,8 +52,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es correcta");
         nota++;
@@ -69,7 +69,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 3");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -77,8 +77,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es incorrecta");
         break;
@@ -94,7 +94,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 4");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -102,8 +102,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es incorrecta");
         break;
@@ -119,7 +119,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 5");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -127,8 +127,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es correcta");
         nota++;
@@ -144,7 +144,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 6");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -152,8 +152,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es incorrecta");
         break;
@@ -169,7 +169,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 7");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -177,8 +177,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es incorrecta");
         break;
@@ -194,7 +194,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 8");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -202,8 +202,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es correcta");
         nota++;
@@ -219,7 +219,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 9");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -227,8 +227,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es incorrecta");
         break;
@@ -244,7 +244,7 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("Pregunta 10");
     System.out.println("asldjflaskdjflasjdflasjdf");
     System.out.println("a)");
@@ -252,8 +252,8 @@ public class Ej12_cuestionario {
     System.out.println("c)");
     System.out.println("d)");
     respuesta = Integer.parseInt(s.nextLine());
-    
-    switch (respuesta){
+
+    switch (respuesta) {
       case (1):
         System.out.println("La respuesta es incorrecta");
         break;
@@ -269,8 +269,8 @@ public class Ej12_cuestionario {
         break;
       default:
     }
-    
+
     System.out.println("La calificación obtenida es= " + nota);
-    
+
   }
 }
